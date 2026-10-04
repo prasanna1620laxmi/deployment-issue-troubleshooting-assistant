@@ -1,0 +1,4 @@
+timestamp,level,message
+2025-06-01 09:00:00,INFO,Rolling out checkout-api
+2025-06-01 09:05:00,WARNING,Readiness probe failed: timeout
+2025-06-01 09:10:00,ERROR,Deployment timed out after 600 seconds waiting for service checkout-api to become healthy

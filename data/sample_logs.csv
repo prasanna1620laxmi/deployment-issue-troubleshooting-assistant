@@ -1,0 +1,257 @@
+log_text,category
+"deploy-step failed: sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, ""Can't connect to MySQL server on 'db-prod-01'"")",Database Connectivity Failure
+ERROR Timeout waiting for lock; deployment of auth-service aborted after 475 seconds,Deployment Timeout
+FATAL Configuration file settings.yml is malformed: duplicate key found at line 14,Configuration Issue
+[ERROR] ERROR: No matching distribution found for guava==2.0.1,Dependency Issue
+deploy-step failed: npm ERR! code ELIFECYCLE npm ERR! axios@1.2.3 build: `webpack --mode production`,Build Failure
+2025-03-16 02:48:03 ERROR java.sql.SQLException: Connection refused: connect to jdbc:postgresql://postgres.internal:5432/uploads,Database Connectivity Failure
+2025-03-23 20:15:06 ERROR Readiness probe failed: timeout; rollout of inventory did not complete in 884s,Deployment Timeout
+[ERROR] BUILD FAILED in 103s Execution failed for task ':app:compileJava',Build Failure
+"2025-03-05 06:26:42 ERROR [ERROR] COMPILATION ERROR : Database.java:[192,12] package does not exist",Build Failure
+pip ResolutionImpossible: conflicting dependencies pandas and flask,Dependency Issue
+AccessDeniedException: User: arn:aws:iam::598216:user/appadmin is not authorized to perform: s3:PutObject,Permission Issue
+"2025-03-04 12:05:35 ERROR sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, ""Can't connect to MySQL server on 'rds-main.example.com'"")",Database Connectivity Failure
+Error: listen EADDRINUSE: address already in use :::8000,Configuration Issue
+"[ERROR] COMPILATION ERROR : Routes.java:[149,39] package does not exist",Build Failure
+2025-03-20 10:48:57 ERROR Access denied for user 'appadmin'@'rds-main.example.com' to write to /data/www,Permission Issue
+"0/4 nodes are available: 8 Insufficient cpu, 2 Insufficient memory.",Resource Exhaustion
+FATAL Task timed out after 42.00 seconds in deploy step release,Deployment Timeout
+Deployment timed out after 836 seconds waiting for service auth-service to become healthy,Deployment Timeout
+"deploy-step failed: error: deployment ""payments"" exceeded its progress deadline",Deployment Timeout
+"Invalid config: server.port must be an integer, got 'auto'",Configuration Issue
+deploy-step failed: ERROR: Could not find a version that satisfies the requirement guava==0.8.5,Dependency Issue
+FATAL AccessDeniedException: User: arn:aws:iam::611945:user/svc_app is not authorized to perform: s3:PutObject,Permission Issue
+java.lang.OutOfMemoryError: Java heap space,Resource Exhaustion
+OOMKilled: container auth-service exceeded memory limit of 1024Mi,Resource Exhaustion
+[ERROR] Missing required environment variable: SMTP_HOST,Missing Environment Variables
+FATAL pip ResolutionImpossible: conflicting dependencies guava and flask,Dependency Issue
+2025-03-08 18:38:02 ERROR yaml.scanner.ScannerError: mapping values are not allowed here in config/deploy.yml line 86,Configuration Issue
+"FATAL SyntaxError: invalid syntax (database.py, line 53)",Build Failure
+[ERROR] Error: Environment variable AWS_REGION is not set,Missing Environment Variables
+MemoryError: Unable to allocate 18 GiB for an array,Resource Exhaustion
+[ERROR] chown: changing ownership of '/srv/artifacts': Operation not permitted,Permission Issue
+[ERROR] Disk usage at 99% on /var/lib/app-data; cannot extract artifact,Resource Exhaustion
+FATAL Configuration error: invalid value for 'timeout' in routes.properties,Configuration Issue
+FATAL PermissionError: [Errno 13] Permission denied: '/var/www/www/deploy.conf',Permission Issue
+2025-03-21 14:58:17 ERROR Missing required environment variable: SMTP_HOST,Missing Environment Variables
+deploy-step failed: pydantic ValidationError: 1 validation error for Settings database_url field required (type=value_error.missing),Missing Environment Variables
+"[ERROR] IllegalArgumentException: Could not resolve placeholder 'app_env' in value ""${redis_host}""",Missing Environment Variables
+"FATAL [ERROR] COMPILATION ERROR : Server.java:[104,19] package does not exist",Build Failure
+ERROR: Job exceeded maximum execution time of 41 minutes,Deployment Timeout
+WARNING: The APP_ENV variable is not set. Defaulting to a blank string.,Missing Environment Variables
+deploy-step failed: Missing required environment variable: APP_ENV,Missing Environment Variables
+deploy-step failed: pip ResolutionImpossible: conflicting dependencies axios and django,Dependency Issue
+ERROR Configuration error: invalid value for 'mode' in settings.properties,Configuration Issue
+[ERROR] Error parsing application.json: Unexpected token } in JSON at position 11,Configuration Issue
+"deploy-step failed: 0/2 nodes are available: 3 Insufficient cpu, 8 Insufficient memory.",Resource Exhaustion
+"ERROR error TS2322: Type 'string' is not assignable to type 'number'. application.ts(193,16)",Build Failure
+"[ERROR] sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, ""Can't connect to MySQL server on '10.0.4.21'"")",Database Connectivity Failure
+deploy-step failed: ERROR: No matching distribution found for flask==3.9.0,Dependency Issue
+[ERROR] Task timed out after 100.00 seconds in deploy step smoke-test,Deployment Timeout
+2025-03-16 11:21:35 ERROR TypeError: process.env.APP_ENV is undefined,Missing Environment Variables
+ERROR java.lang.OutOfMemoryError: Java heap space,Resource Exhaustion
+"[ERROR] 0/8 nodes are available: 5 Insufficient cpu, 9 Insufficient memory.",Resource Exhaustion
+[ERROR] Access denied for user 'svc_app'@'rds-main.example.com' to write to /data/artifacts,Permission Issue
+403 Forbidden: user deploy is not authorized to perform deploy on releases,Permission Issue
+"2025-03-03 04:09:14 ERROR Error from server (Forbidden): pods is forbidden: User ""svc_app"" cannot create resource ""pods"" in namespace ""default""",Permission Issue
+"FATAL IllegalArgumentException: Could not resolve placeholder 'database_url' in value ""${redis_host}""",Missing Environment Variables
+ERROR MemoryError: Unable to allocate 8 GiB for an array,Resource Exhaustion
+2025-03-24 07:10:29 ERROR Database connection pool exhausted: unable to acquire connection to mysql-master:5432,Database Connectivity Failure
+ERROR OOMKilled: container inventory exceeded memory limit of 1024Mi,Resource Exhaustion
+java.sql.SQLException: Connection refused: connect to jdbc:postgresql://10.0.4.21:5432/releases,Database Connectivity Failure
+Missing required environment variable: SECRET_KEY,Missing Environment Variables
+"FATAL Error from server (Forbidden): pods is forbidden: User ""ci_user"" cannot create resource ""pods"" in namespace ""staging""",Permission Issue
+2025-03-18 00:58:25 ERROR PermissionError: [Errno 13] Permission denied: '/var/www/releases/database.conf',Permission Issue
+deploy-step failed: Timeout waiting for lock; deployment of checkout-api aborted after 473 seconds,Deployment Timeout
+"ERROR IllegalArgumentException: Could not resolve placeholder 'smtp_host' in value ""${smtp_host}""",Missing Environment Variables
+BUILD FAILED in 71s Execution failed for task ':app:compileJava',Build Failure
+[ERROR] java.lang.NoClassDefFoundError: org/left-pad/Client,Dependency Issue
+ERROR: No matching distribution found for spring-core==2.0.1,Dependency Issue
+deploy-step failed: Access denied for user 'deploy'@'orders-db' to write to /data/uploads,Permission Issue
+ERROR WARNING: The SECRET_KEY variable is not set. Defaulting to a blank string.,Missing Environment Variables
+[ERROR] 403 Forbidden: user ci_user is not authorized to perform deploy on uploads,Permission Issue
+2025-03-25 15:29:27 ERROR Readiness probe failed: timeout; rollout of payments did not complete in 311s,Deployment Timeout
+ERROR Error: Environment variable API_BASE_URL is not set,Missing Environment Variables
+[ERROR] pydantic ValidationError: 1 validation error for Settings jwt_issuer field required (type=value_error.missing),Missing Environment Variables
+[ERROR] PermissionError: [Errno 13] Permission denied: '/var/www/app-data/server.conf',Permission Issue
+"deploy-step failed: FATAL: password authentication failed for user ""deploy""",Database Connectivity Failure
+ERROR psycopg2.OperationalError: could not connect to server: Connection timed out on host postgres.internal,Database Connectivity Failure
+Config error: ${SECRET_KEY} placeholder could not be resolved,Missing Environment Variables
+deploy-step failed: TypeError: process.env.DATABASE_URL is undefined,Missing Environment Variables
+npm ERR! code ELIFECYCLE npm ERR! boto3@4.17.21 build: `webpack --mode production`,Build Failure
+FATAL Error: listen EADDRINUSE: address already in use :::8080,Configuration Issue
+ModuleNotFoundError: No module named 'django',Dependency Issue
+"Error: EACCES: permission denied, mkdir '/opt/artifacts'",Permission Issue
+FATAL Could not open JDBC Connection; Communications link failure to postgres.internal,Database Connectivity Failure
+2025-03-19 16:20:59 ERROR Error parsing settings.json: Unexpected token } in JSON at position 352,Configuration Issue
+2025-03-15 03:15:14 ERROR npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/django,Dependency Issue
+2025-03-09 00:48:51 ERROR psycopg2.OperationalError: could not connect to server: Connection timed out on host rds-main.example.com,Database Connectivity Failure
+"[ERROR] Error from server (Forbidden): pods is forbidden: User ""deploy"" cannot create resource ""pods"" in namespace ""prod""",Permission Issue
+"error TS2322: Type 'string' is not assignable to type 'number'. app.ts(81,8)",Build Failure
+OSError: [Errno 28] No space left on device,Resource Exhaustion
+Configuration file routes.yml is malformed: duplicate key found at line 36,Configuration Issue
+deploy-step failed: AccessDeniedException: User: arn:aws:iam::254511:user/deploy is not authorized to perform: s3:PutObject,Permission Issue
+deploy-step failed: yaml.scanner.ScannerError: mapping values are not allowed here in config/application.yml line 60,Configuration Issue
+deploy-step failed: Configuration error: invalid value for 'timeout' in app.properties,Configuration Issue
+"FATAL IllegalArgumentException: Could not resolve placeholder 'secret_key' in value ""${app_env}""",Missing Environment Variables
+deploy-step failed: Database connection pool exhausted: unable to acquire connection to orders-db:5432,Database Connectivity Failure
+2025-03-23 08:35:00 ERROR 504 Gateway Timeout while waiting for checkout-api to respond during release,Deployment Timeout
+deploy-step failed: java.lang.OutOfMemoryError: Java heap space,Resource Exhaustion
+[ERROR] OOMKilled: container inventory exceeded memory limit of 256Mi,Resource Exhaustion
+Disk usage at 96% on /var/lib/app-data; cannot extract artifact,Resource Exhaustion
+deploy-step failed: Deployment timed out after 1392 seconds waiting for service auth-service to become healthy,Deployment Timeout
+FATAL fatal error: runtime: out of memory,Resource Exhaustion
+Missing required environment variable: AWS_REGION,Missing Environment Variables
+ERROR make: *** [all] Error 1,Build Failure
+Readiness probe failed: timeout; rollout of auth-service did not complete in 474s,Deployment Timeout
+2025-03-04 20:19:53 ERROR ERROR: No matching distribution found for flask==4.17.21,Dependency Issue
+"FATAL sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, ""Can't connect to MySQL server on 'rds-main.example.com'"")",Database Connectivity Failure
+"FATAL SyntaxError: invalid syntax (app.py, line 243)",Build Failure
+2025-03-28 19:27:13 ERROR ERROR: No matching distribution found for boto3==4.17.21,Dependency Issue
+ERROR AccessDeniedException: User: arn:aws:iam::576786:user/jenkins is not authorized to perform: s3:PutObject,Permission Issue
+"FATAL IllegalArgumentException: Could not resolve placeholder 'smtp_host' in value ""${database_url}""",Missing Environment Variables
+make: *** [all] Error 2,Build Failure
+Configuration error: invalid value for 'timeout' in app.properties,Configuration Issue
+"ERROR [ERROR] COMPILATION ERROR : App.java:[192,10] package does not exist",Build Failure
+bash: ./deploy.sh: Permission denied,Permission Issue
+FATAL OSError: [Errno 28] No space left on device,Resource Exhaustion
+"FATAL: password authentication failed for user ""jenkins""",Database Connectivity Failure
+[ERROR] java.lang.NoClassDefFoundError: org/numpy/Client,Dependency Issue
+2025-03-16 14:05:38 ERROR java.lang.OutOfMemoryError: Java heap space,Resource Exhaustion
+FATAL ModuleNotFoundError: No module named 'lodash',Dependency Issue
+"0/6 nodes are available: 8 Insufficient cpu, 2 Insufficient memory.",Resource Exhaustion
+"deploy-step failed: Error from server (Forbidden): pods is forbidden: User ""svc_app"" cannot create resource ""pods"" in namespace ""prod""",Permission Issue
+FATAL Missing required environment variable: APP_ENV,Missing Environment Variables
+FATAL ORA-12541: TNS:no listener while connecting to db-prod-01,Database Connectivity Failure
+deploy-step failed: Configuration file server.yml is malformed: duplicate key found at line 29,Configuration Issue
+deploy-step failed: Deployment timed out after 626 seconds waiting for service auth-service to become healthy,Deployment Timeout
+ERROR Invalid configuration: unknown property 'server.mode' in database.yml,Configuration Issue
+Database connection pool exhausted: unable to acquire connection to db-prod-01:5432,Database Connectivity Failure
+FATAL make: *** [all] Error 2,Build Failure
+FATAL Configuration error: invalid value for 'mode' in server.properties,Configuration Issue
+ERROR ORA-12541: TNS:no listener while connecting to postgres.internal,Database Connectivity Failure
+[ERROR] Database connection pool exhausted: unable to acquire connection to orders-db:3306,Database Connectivity Failure
+ERROR Failed to collect dependencies: Could not find artifact org.lodash:numpy:jar:3.9.0,Dependency Issue
+Timeout waiting for lock; deployment of auth-service aborted after 393 seconds,Deployment Timeout
+[ERROR] ERROR: Could not find a version that satisfies the requirement pandas==2.0.1,Dependency Issue
+deploy-step failed: npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/requests,Dependency Issue
+[ERROR] Invalid configuration: unknown property 'db.pool' in deploy.yml,Configuration Issue
+[ERROR] MemoryError: Unable to allocate 20 GiB for an array,Resource Exhaustion
+[ERROR] Error: Environment variable API_BASE_URL is not set,Missing Environment Variables
+"FATAL error: deployment ""checkout-api"" exceeded its progress deadline",Deployment Timeout
+ERROR java.sql.SQLException: Connection refused: connect to jdbc:postgresql://postgres.internal:5432/www,Database Connectivity Failure
+Deployment timed out after 831 seconds waiting for service inventory to become healthy,Deployment Timeout
+Configuration file app.yml is malformed: duplicate key found at line 60,Configuration Issue
+ERROR pydantic ValidationError: 1 validation error for Settings app_env field required (type=value_error.missing),Missing Environment Variables
+2025-03-20 00:35:12 ERROR Database connection pool exhausted: unable to acquire connection to postgres.internal:3306,Database Connectivity Failure
+ERROR fatal error: runtime: out of memory,Resource Exhaustion
+2025-03-25 13:38:38 ERROR fatal error: runtime: out of memory,Resource Exhaustion
+"[ERROR] Error from server (Forbidden): pods is forbidden: User ""appadmin"" cannot create resource ""pods"" in namespace ""prod""",Permission Issue
+2025-03-24 03:48:13 ERROR fatal error: runtime: out of memory,Resource Exhaustion
+[ERROR] AccessDeniedException: User: arn:aws:iam::387936:user/ci_user is not authorized to perform: s3:PutObject,Permission Issue
+TimeoutError: health check did not pass within 514s for checkout-api,Deployment Timeout
+ERROR Missing required environment variable: JWT_ISSUER,Missing Environment Variables
+"connection to server at ""mysql-master"", port 3306 failed: Connection refused",Database Connectivity Failure
+error: compilation failed: Database.java:103: error: cannot find symbol,Build Failure
+2025-03-19 09:25:35 ERROR error: compilation failed: Server.java:151: error: cannot find symbol,Build Failure
+[ERROR] Failed to collect dependencies: Could not find artifact org.boto3:requests:jar:5.1.0,Dependency Issue
+Error: listen EADDRINUSE: address already in use :::3000,Configuration Issue
+deploy-step failed: Error: Environment variable APP_ENV is not set,Missing Environment Variables
+2025-03-01 21:52:35 ERROR Error parsing database.json: Unexpected token } in JSON at position 63,Configuration Issue
+"FATAL SyntaxError: invalid syntax (server.py, line 221)",Build Failure
+ERROR OSError: [Errno 28] No space left on device,Resource Exhaustion
+"[ERROR] Error: EACCES: permission denied, mkdir '/opt/uploads'",Permission Issue
+[ERROR] Configuration file settings.yml is malformed: duplicate key found at line 57,Configuration Issue
+"FATAL 0/3 nodes are available: 4 Insufficient cpu, 5 Insufficient memory.",Resource Exhaustion
+FATAL java.sql.SQLException: Connection refused: connect to jdbc:postgresql://db-prod-01:5432/app-data,Database Connectivity Failure
+FATAL Failed to collect dependencies: Could not find artifact org.numpy:guava:jar:2.0.1,Dependency Issue
+FATAL 403 Forbidden: user ci_user is not authorized to perform deploy on uploads,Permission Issue
+[ERROR] MemoryError: Unable to allocate 31 GiB for an array,Resource Exhaustion
+"deploy-step failed: [ERROR] COMPILATION ERROR : Routes.java:[172,16] package does not exist",Build Failure
+2025-03-09 17:55:00 ERROR java.sql.SQLException: Connection refused: connect to jdbc:postgresql://rds-main.example.com:5432/www,Database Connectivity Failure
+ERROR KeyError: 'SMTP_HOST',Missing Environment Variables
+"[ERROR] error TS2322: Type 'string' is not assignable to type 'number'. server.ts(18,18)",Build Failure
+2025-03-07 22:21:13 ERROR Error parsing app.json: Unexpected token } in JSON at position 260,Configuration Issue
+2025-03-20 21:24:21 ERROR Deployment timed out after 1132 seconds waiting for service payments to become healthy,Deployment Timeout
+[ERROR] error: compilation failed: Routes.java:245: error: cannot find symbol,Build Failure
+java.lang.NoClassDefFoundError: org/left-pad/Client,Dependency Issue
+"[ERROR] IllegalArgumentException: Could not resolve placeholder 'secret_key' in value ""${database_url}""",Missing Environment Variables
+"[ERROR] Error from server (Forbidden): pods is forbidden: User ""jenkins"" cannot create resource ""pods"" in namespace ""default""",Permission Issue
+npm ERR! code ELIFECYCLE npm ERR! flask@3.9.0 build: `webpack --mode production`,Build Failure
+npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/django,Dependency Issue
+deploy-step failed: Readiness probe failed: timeout; rollout of payments did not complete in 346s,Deployment Timeout
+deploy-step failed: Too many open files: cannot accept new connections,Resource Exhaustion
+ERROR Config error: ${REDIS_HOST} placeholder could not be resolved,Missing Environment Variables
+"deploy-step failed: Error from server (Forbidden): pods is forbidden: User ""ci_user"" cannot create resource ""pods"" in namespace ""default""",Permission Issue
+ERROR TypeError: process.env.DATABASE_URL is undefined,Missing Environment Variables
+FATAL npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/requests,Dependency Issue
+FATAL npm ERR! Could not resolve dependency: peer django@3.9.0,Dependency Issue
+Failed to collect dependencies: Could not find artifact org.guava:flask:jar:4.17.21,Dependency Issue
+FATAL 504 Gateway Timeout while waiting for checkout-api to respond during release,Deployment Timeout
+[ERROR] 403 Forbidden: user ci_user is not authorized to perform deploy on www,Permission Issue
+ERROR npm ERR! code ELIFECYCLE npm ERR! pandas@2.0.1 build: `webpack --mode production`,Build Failure
+"ERROR Error from server (Forbidden): pods is forbidden: User ""jenkins"" cannot create resource ""pods"" in namespace ""staging""",Permission Issue
+npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/numpy,Dependency Issue
+ERROR: No matching distribution found for lodash==0.8.5,Dependency Issue
+"FATAL error TS2322: Type 'string' is not assignable to type 'number'. deploy.ts(114,29)",Build Failure
+"nginx: [emerg] unexpected ""}"" in /etc/nginx/conf.d/deploy.conf:18",Configuration Issue
+[ERROR] Invalid configuration: unknown property 'server.mode' in application.yml,Configuration Issue
+"ERROR nginx: [emerg] unexpected ""}"" in /etc/nginx/conf.d/application.conf:77",Configuration Issue
+FATAL Could not open JDBC Connection; Communications link failure to 10.0.4.21,Database Connectivity Failure
+FATAL Error parsing app.json: Unexpected token } in JSON at position 344,Configuration Issue
+"ERROR connection to server at ""rds-main.example.com"", port 3306 failed: Connection refused",Database Connectivity Failure
+2025-03-28 11:36:12 ERROR java.sql.SQLException: Connection refused: connect to jdbc:postgresql://db-prod-01:5432/uploads,Database Connectivity Failure
+Error parsing application.json: Unexpected token } in JSON at position 64,Configuration Issue
+FATAL Config error: ${API_BASE_URL} placeholder could not be resolved,Missing Environment Variables
+FATAL ModuleNotFoundError: No module named 'numpy',Dependency Issue
+"SyntaxError: invalid syntax (routes.py, line 236)",Build Failure
+OOMKilled: container auth-service exceeded memory limit of 256Mi,Resource Exhaustion
+Readiness probe failed: timeout; rollout of inventory did not complete in 887s,Deployment Timeout
+2025-03-12 13:47:35 ERROR Task timed out after 390.00 seconds in deploy step smoke-test,Deployment Timeout
+2025-03-13 07:54:49 ERROR TypeError: process.env.DATABASE_URL is undefined,Missing Environment Variables
+[ERROR] ORA-12541: TNS:no listener while connecting to mysql-master,Database Connectivity Failure
+FATAL make: *** [all] Error 1,Build Failure
+"FATAL: password authentication failed for user ""svc_app""",Database Connectivity Failure
+"error: deployment ""auth-service"" exceeded its progress deadline",Deployment Timeout
+deploy-step failed: pip ResolutionImpossible: conflicting dependencies lodash and requests,Dependency Issue
+"ERROR Invalid config: server.port must be an integer, got 'eighty'",Configuration Issue
+FATAL 504 Gateway Timeout while waiting for payments to respond during release,Deployment Timeout
+2025-03-07 14:44:16 ERROR Task timed out after 201.00 seconds in deploy step smoke-test,Deployment Timeout
+npm ERR! code E404 npm ERR! 404 Not Found - GET https://registry.npmjs.org/boto3,Dependency Issue
+FATAL ORA-12541: TNS:no listener while connecting to postgres.internal,Database Connectivity Failure
+"deploy-step failed: Error: EACCES: permission denied, mkdir '/opt/www'",Permission Issue
+ERROR ORA-12541: TNS:no listener while connecting to orders-db,Database Connectivity Failure
+"Error: EACCES: permission denied, mkdir '/opt/uploads'",Permission Issue
+make: *** [all] Error 1,Build Failure
+2025-03-10 15:30:28 ERROR Disk usage at 96% on /var/lib/releases; cannot extract artifact,Resource Exhaustion
+[ERROR] 504 Gateway Timeout while waiting for web-frontend to respond during release,Deployment Timeout
+2025-03-01 09:36:43 ERROR ERROR: Job exceeded maximum execution time of 35 minutes,Deployment Timeout
+FATAL Configuration file app.yml is malformed: duplicate key found at line 47,Configuration Issue
+"2025-03-07 08:02:45 ERROR [ERROR] COMPILATION ERROR : Application.java:[134,35] package does not exist",Build Failure
+ERROR chown: changing ownership of '/srv/app-data': Operation not permitted,Permission Issue
+deploy-step failed: OOMKilled: container web-frontend exceeded memory limit of 512Mi,Resource Exhaustion
+"ERROR error: deployment ""web-frontend"" exceeded its progress deadline",Deployment Timeout
+ERROR TypeError: process.env.AWS_REGION is undefined,Missing Environment Variables
+FATAL Error parsing deploy.json: Unexpected token } in JSON at position 171,Configuration Issue
+"deploy-step failed: 0/3 nodes are available: 4 Insufficient cpu, 2 Insufficient memory.",Resource Exhaustion
+FATAL java.sql.SQLException: Connection refused: connect to jdbc:postgresql://rds-main.example.com:5432/www,Database Connectivity Failure
+2025-03-24 22:07:49 ERROR TimeoutError: health check did not pass within 348s for checkout-api,Deployment Timeout
+"ERROR [ERROR] COMPILATION ERROR : Database.java:[138,22] package does not exist",Build Failure
+FATAL Task timed out after 514.00 seconds in deploy step smoke-test,Deployment Timeout
+deploy-step failed: bash: ./deploy.sh: Permission denied,Permission Issue
+FATAL Invalid configuration: unknown property 'cache.ttl' in application.yml,Configuration Issue
+"2025-03-19 03:04:34 ERROR nginx: [emerg] unexpected ""}"" in /etc/nginx/conf.d/app.conf:36",Configuration Issue
+ERROR OOMKilled: container auth-service exceeded memory limit of 256Mi,Resource Exhaustion
+deploy-step failed: error: compilation failed: Server.java:112: error: cannot find symbol,Build Failure
+FATAL java.sql.SQLException: Connection refused: connect to jdbc:postgresql://orders-db:5432/uploads,Database Connectivity Failure
+FATAL Failed to collect dependencies: Could not find artifact org.lodash:left-pad:jar:3.9.0,Dependency Issue
+2025-03-25 07:44:30 ERROR Timeout waiting for lock; deployment of web-frontend aborted after 47 seconds,Deployment Timeout
+fatal error: runtime: out of memory,Resource Exhaustion
+ERROR npm ERR! code ELIFECYCLE npm ERR! boto3@1.2.3 build: `webpack --mode production`,Build Failure
+ERROR: No matching distribution found for express==5.1.0,Dependency Issue
+[ERROR] Readiness probe failed: timeout; rollout of payments did not complete in 317s,Deployment Timeout
+"2025-03-14 18:25:23 ERROR FATAL: password authentication failed for user ""svc_app""",Database Connectivity Failure
+"[ERROR] COMPILATION ERROR : Server.java:[187,21] package does not exist",Build Failure
+ERROR TypeError: process.env.APP_ENV is undefined,Missing Environment Variables
+"ERROR Error from server (Forbidden): pods is forbidden: User ""ci_user"" cannot create resource ""pods"" in namespace ""prod""",Permission Issue
+[ERROR] ModuleNotFoundError: No module named 'boto3',Dependency Issue

@@ -1,0 +1,9 @@
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.9.1
+streamlit==1.65.0
+tensorflow==2.21.0
+langchain==1.4.3
+langchain-core>=1.0
+langchain-google-genai==4.4.0
+python-dotenv>=1.0

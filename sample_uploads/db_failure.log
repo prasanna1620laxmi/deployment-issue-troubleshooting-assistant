@@ -1,0 +1,10 @@
+2025-03-14 10:15:01 INFO Starting deployment of orders-service v2.4.1
+2025-03-14 10:15:03 INFO Loading configuration for environment: production
+2025-03-14 10:15:04 WARNING Slow response from artifact registry (3.2s)
+2025-03-14 10:15:06 ERROR Failed to initialize datasource
+java.sql.SQLException: Connection refused: connect to jdbc:postgresql://db-prod-01:5432/orders?user=app&password=SuperSecret123
+    at com.example.db.Pool.open(Pool.java:88)
+    at com.example.Main.start(Main.java:41)
+Caused by: java.net.ConnectException: Connection refused
+2025-03-14 10:15:07 ERROR Failed to initialize datasource
+2025-03-14 10:15:08 FATAL Application failed to start

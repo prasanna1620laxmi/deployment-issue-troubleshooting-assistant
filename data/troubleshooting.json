@@ -1,0 +1,226 @@
+[
+  {
+    "category": "Database Connectivity Failure",
+    "severity": "High",
+    "patterns": ["connection refused", "could not connect to server", "jdbc", "sqlstate", "password authentication failed", "ora-", "can't connect to mysql", "communications link failure", "connection pool", "sqlexception", "operationalerror"],
+    "probable_causes": [
+      "The database server is down, restarting, or not listening on the expected port.",
+      "Wrong host, port, database name, or credentials in the deployed configuration.",
+      "A firewall, security group, or network rule blocks the application from reaching the database.",
+      "The connection pool is exhausted or the database has reached its maximum connections."
+    ],
+    "diagnostic_checks": [
+      "Confirm the database service is running and healthy from the database host's monitoring or status page.",
+      "Verify the host, port, and database name in the deployed configuration match the intended environment.",
+      "Test network reachability from the application server to the database host and port using your approved network tools.",
+      "Check whether the credentials used by the application are valid and not expired or rotated."
+    ],
+    "corrective_actions": [
+      "Correct the database connection settings (host, port, credentials) in the configuration for this environment.",
+      "Ask the network or security team to allow traffic from the application server to the database port if it is blocked.",
+      "Review connection pool size and the database's maximum connection limit with the database administrator.",
+      "Re-run the deployment only after connectivity is confirmed."
+    ],
+    "validation_steps": [
+      "The application starts and its health check reports the database connection as healthy.",
+      "A simple read query from the application succeeds.",
+      "No new connection errors appear in the logs for several minutes."
+    ]
+  },
+  {
+    "category": "Dependency Issue",
+    "severity": "Medium",
+    "patterns": ["modulenotfounderror", "no module named", "could not find a version", "no matching distribution", "resolutionimpossible", "noclassdeffounderror", "could not resolve dependency", "404 not found - get", "could not find artifact", "cannot find module", "importerror"],
+    "probable_causes": [
+      "A required package or library is missing from the requirements or lock file.",
+      "The requested package version does not exist or conflicts with another package.",
+      "The package registry or artifact repository is unreachable or the package was removed.",
+      "The runtime version (Python, Node, Java) is incompatible with the package."
+    ],
+    "diagnostic_checks": [
+      "Compare the missing package name and version with the project's requirements or lock file.",
+      "Check that the package registry or artifact repository is reachable from the build or deployment server.",
+      "Verify the runtime version on the server matches the version the project expects.",
+      "Look for conflicting version constraints reported in the log."
+    ],
+    "corrective_actions": [
+      "Add the missing dependency to the requirements or lock file with a version that exists and is compatible.",
+      "Resolve version conflicts by aligning package versions, then regenerate the lock file.",
+      "Configure access to the correct package registry or mirror if it is unreachable.",
+      "Rebuild the deployment package after fixing the dependency list."
+    ],
+    "validation_steps": [
+      "The dependency installation step completes without errors.",
+      "The application starts and imports the previously missing package.",
+      "The build produces the same dependency versions in every environment."
+    ]
+  },
+  {
+    "category": "Configuration Issue",
+    "severity": "Medium",
+    "patterns": ["invalid configuration", "scannererror", "unknown property", "invalid value for", "[emerg]", "unexpected token", "configuration error", "invalid config", "eaddrinuse", "address already in use", "malformed", "duplicate key"],
+    "probable_causes": [
+      "A configuration file has a syntax error such as bad indentation, a stray bracket, or a duplicate key.",
+      "A setting has an invalid value or an unknown property for this application version.",
+      "The configuration for another environment was deployed by mistake.",
+      "A configured port is already used by another process."
+    ],
+    "diagnostic_checks": [
+      "Open the file and line number named in the log and look for syntax mistakes.",
+      "Compare the failing configuration with the last known working version in version control.",
+      "Check whether the configured port is already used by another service.",
+      "Confirm the configuration matches the target environment."
+    ],
+    "corrective_actions": [
+      "Fix the syntax or invalid value and validate the file with the appropriate linter or the application's built-in config check.",
+      "Revert to the last known good configuration through your normal change process if the cause is unclear.",
+      "Change the conflicting port setting or stop the competing service through the approved process.",
+      "Redeploy with the corrected configuration."
+    ],
+    "validation_steps": [
+      "The application starts and parses its configuration without errors.",
+      "The service listens on the expected port.",
+      "A smoke test of the main feature passes."
+    ]
+  },
+  {
+    "category": "Build Failure",
+    "severity": "Medium",
+    "patterns": ["build failed", "compilation failed", "compilation error", "cannot find symbol", "syntaxerror", "make: ***", "error ts", "elifecycle", "execution failed for task", "build failed with an exception"],
+    "probable_causes": [
+      "A code change introduced a syntax or type error that prevents compilation.",
+      "A build script, task, or test step failed.",
+      "The build environment differs from the developer environment (tool or SDK version).",
+      "A missing generated file or an incomplete checkout."
+    ],
+    "diagnostic_checks": [
+      "Find the first error in the build output; later errors are often a consequence of it.",
+      "Check which commit introduced the failure and what changed.",
+      "Compare the build tool and SDK versions on the build server with the project's expected versions.",
+      "Re-run the failing build step and compare the result."
+    ],
+    "corrective_actions": [
+      "Fix the code error reported at the file and line shown in the log.",
+      "Align the build tool or SDK version with the project's required version.",
+      "Fix or update the failing build script or test, then commit the change.",
+      "Trigger a new build from a clean workspace."
+    ],
+    "validation_steps": [
+      "The build completes successfully and produces the expected artifact.",
+      "All automated tests in the pipeline pass.",
+      "The artifact deploys to a test environment."
+    ]
+  },
+  {
+    "category": "Permission Issue",
+    "severity": "Medium",
+    "patterns": ["permission denied", "eacces", "forbidden", "not authorized", "access denied", "accessdenied", "operation not permitted", "unauthorized", "is forbidden"],
+    "probable_causes": [
+      "The deployment user or service account lacks the required file, folder, or role permissions.",
+      "A recent permission, role, or policy change removed access.",
+      "A script is not marked as executable.",
+      "Credentials or tokens used by the pipeline have expired or have too few privileges."
+    ],
+    "diagnostic_checks": [
+      "Identify the exact user or role and the exact resource named in the error.",
+      "Check the permissions of that resource and compare them with what the deployment needs.",
+      "Review recent access or policy changes for the account.",
+      "Confirm the pipeline's credentials are still valid."
+    ],
+    "corrective_actions": [
+      "Request the minimum required permission for the deployment account through your access-management process.",
+      "Fix the ownership or executable permission of the specific file with the system administrator's approval.",
+      "Renew expired credentials using the approved secret-management process.",
+      "Avoid granting broad permissions as a quick fix."
+    ],
+    "validation_steps": [
+      "The previously failing step now succeeds with the least-privileged account.",
+      "No new permission errors appear in the logs.",
+      "The permission change is recorded in the change log."
+    ]
+  },
+  {
+    "category": "Deployment Timeout",
+    "severity": "High",
+    "patterns": ["timed out", "timeout", "exceeded its progress deadline", "gateway timeout", "readiness probe failed", "deadline exceeded", "did not complete", "exceeded maximum execution time"],
+    "probable_causes": [
+      "The new version is slow to start or fails its health check, so the rollout never completes.",
+      "A dependency (database, API) the service waits for is slow or unavailable.",
+      "The timeout setting is too short for the application's normal startup time.",
+      "Resource shortages slow down the deployment."
+    ],
+    "diagnostic_checks": [
+      "Check the application's own startup logs for the service that timed out.",
+      "Check that the health check or readiness endpoint is correct and reachable.",
+      "Verify the services this application depends on are healthy.",
+      "Compare current startup time with previous successful deployments."
+    ],
+    "corrective_actions": [
+      "Fix the startup or health-check problem shown in the application logs.",
+      "Restore any unhealthy dependency through its owning team.",
+      "Increase the timeout only if the normal startup time is legitimately longer, and record the reason.",
+      "Roll back through your approved release process if the service is impacted."
+    ],
+    "validation_steps": [
+      "The rollout completes and the service reports healthy.",
+      "Startup time is within the expected range.",
+      "Traffic is served without gateway or timeout errors."
+    ]
+  },
+  {
+    "category": "Resource Exhaustion",
+    "severity": "High",
+    "patterns": ["outofmemoryerror", "oomkilled", "no space left on device", "out of memory", "insufficient cpu", "insufficient memory", "too many open files", "memoryerror", "disk usage", "exceeded memory limit"],
+    "probable_causes": [
+      "The process or container memory limit is too low for the workload.",
+      "The disk or volume is full (logs, old releases, temporary files).",
+      "The cluster has no free CPU or memory to schedule the new instance.",
+      "A memory leak or a file or connection leak in the application."
+    ],
+    "diagnostic_checks": [
+      "Check memory, CPU, and disk usage on the affected host or container in your monitoring tool.",
+      "Compare the configured resource limits with the actual usage.",
+      "Check for large or old files, such as logs and old releases, consuming disk space.",
+      "Check whether usage grows steadily over time, which suggests a leak."
+    ],
+    "corrective_actions": [
+      "Increase the memory, CPU, or disk allocation through the approved change process.",
+      "Clean up unneeded files according to your retention policy, with the owner's approval.",
+      "Add cluster capacity or reduce the requested resources if scheduling fails.",
+      "Open a defect to investigate suspected leaks."
+    ],
+    "validation_steps": [
+      "Resource usage stays below the limits during and after deployment.",
+      "The application runs without out-of-memory or disk errors.",
+      "Monitoring alerts for resources are clear."
+    ]
+  },
+  {
+    "category": "Missing Environment Variables",
+    "severity": "Medium",
+    "patterns": ["environment variable", "env var", "is not set", "process.env", "could not resolve placeholder", "field required", "keyerror", "is undefined", "missing required", "placeholder could not be resolved"],
+    "probable_causes": [
+      "A required variable was not defined for this environment in the pipeline or hosting platform.",
+      "The variable name is misspelled or differs between environments.",
+      "A secret store or variable group was not linked to this deployment.",
+      "A new version of the application requires a variable that was not added to the environment."
+    ],
+    "diagnostic_checks": [
+      "Note the exact variable name in the log and check whether it is defined for this environment.",
+      "Compare the variables of the failing environment with a working one.",
+      "Check the release notes or configuration template for newly required variables.",
+      "Check that the secret store or variable group is linked to the deployment."
+    ],
+    "corrective_actions": [
+      "Define the missing variable in the deployment platform or secret store using the approved process.",
+      "Correct the variable name if it is misspelled.",
+      "Update the environment template or documentation so the variable is not forgotten again.",
+      "Redeploy after confirming all required variables are set."
+    ],
+    "validation_steps": [
+      "The application starts without missing-variable errors.",
+      "The feature that depends on the variable works.",
+      "The variable list matches the documented template."
+    ]
+  }
+]

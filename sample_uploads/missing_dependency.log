@@ -1,0 +1,4 @@
+2025-04-02 08:30:00 INFO Installing dependencies
+2025-04-02 08:30:12 ERROR Could not find a version that satisfies the requirement fastjsonlib==9.9.9
+2025-04-02 08:30:12 ERROR No matching distribution found for fastjsonlib==9.9.9
+2025-04-02 08:30:13 ERROR Build step 'pip install' failed with exit code 1

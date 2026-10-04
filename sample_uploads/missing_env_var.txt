@@ -1,0 +1,6 @@
+2025-05-10 14:01:00 INFO Booting payments-api
+2025-05-10 14:01:01 ERROR Missing required environment variable: JWT_ISSUER
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    issuer = os.environ["JWT_ISSUER"]
+KeyError: 'JWT_ISSUER'
